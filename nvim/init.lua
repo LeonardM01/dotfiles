@@ -1,5 +1,6 @@
 require('base')
-require('highlights') require('maps')
+require('highlights')
+require('maps')
 require('plugins')
 
 local has = function(x)
@@ -7,14 +8,14 @@ local has = function(x)
 end
 
 require("nvim-lsp-installer").setup({
-    automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
-    ui = {
-        icons = {
-            server_installed = "✓",
-            server_pending = "➜",
-            server_uninstalled = "✗"
-        }
+  automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
+  ui = {
+    icons = {
+      server_installed = "✓",
+      server_pending = "➜",
+      server_uninstalled = "✗"
     }
+  }
 })
 
 local is_win = has "win32"
