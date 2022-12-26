@@ -6,8 +6,8 @@ end
 
 vim.cmd [[packadd packer.nvim]]
 vim.cmd [[colorscheme spaceduck]]
---  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
---  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+--vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+--vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
@@ -29,6 +29,17 @@ packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
   }
+  -- Telescope file browser
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-telescope/telescope-file-browser.nvim'
+  use 'nvim-lua/plenary.nvim'
+  -- Tabs bufferline
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  -- Colorizer
+  use 'norcalli/nvim-colorizer.lua'
+  -- Lspsaga
+  use 'glepnir/lspsaga.nvim'
+  -- Autotag and lsp
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use 'onsails/lspkind-nvim'

@@ -2,6 +2,7 @@ require('base')
 require('highlights')
 require('maps')
 require('plugins')
+vim.opt.shell="wsl.exe -d Ubuntu-20.04"
 
 local has = function(x)
   return vim.fn.has(x) == 1
@@ -19,12 +20,7 @@ require("nvim-lsp-installer").setup({
 })
 
 local is_win = has "win32"
-local is_linux = has "linux"
 
-if is_win then
+if(is_win) then
   require('windows')
-end
-
-if is_linux then
-  require('linux')
 end
