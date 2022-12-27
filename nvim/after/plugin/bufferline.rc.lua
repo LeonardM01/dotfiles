@@ -10,9 +10,6 @@ bufferline.setup({
     show_close_icon = false,
     color_icons = true,  
     diagnostics = "nvim_lsp",
-    indicator = {
-      style = 'underline',
-    },
     diagnostics_indicator = function(count, level, diagnostics_dict, context)
       local s = " "
       for e, n in pairs(diagnostics_dict) do

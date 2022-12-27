@@ -1,5 +1,11 @@
 local keymap = vim.keymap
 
+-- Select all text
+keymap.set('n', '<C-a>', 'ggVG')
+
+-- Save
+keymap.set('n', 'sf', ':w<Return>')
+
 -- Invert j & k
 keymap.set('n', 'k', 'j')
 keymap.set('n', 'j', 'k')
@@ -52,3 +58,6 @@ keymap.set('t', '<Esc>', '<C-\\><C-n><C-w>h",{silent = true}')
 
 -- Show hidden files
 keymap.set('n', 'sh', ':netrw-a<Return>')
+
+-- Replace word
+keymap.set('n', '<Space>w', ':% s/')

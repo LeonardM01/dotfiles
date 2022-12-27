@@ -15,7 +15,6 @@ vim.opt.cmdheight = 1
 vim.opt.laststatus = 2
 vim.opt.expandtab = true
 vim.opt.scrolloff = 10
-vim.opt.shell =  'windows shell'
 vim.opt.backupskip = '%temp%/*'
 vim.opt.ignorecase = true
 vim.opt.smarttab = true
