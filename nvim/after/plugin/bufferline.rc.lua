@@ -8,6 +8,14 @@ bufferline.setup({
     always_show_bufferline = true,
     show_buffer_close_icons = false,
     show_close_icon = false,
+    offset = {
+      filetype = "NvimTree",
+      text = function()
+        return vim.fn.getcwd()
+      end,
+      highlight = "Directory",
+      text_align = "left"
+    },
     color_icons = true,  
     diagnostics = "nvim_lsp",
     diagnostics_indicator = function(count, level, diagnostics_dict, context)

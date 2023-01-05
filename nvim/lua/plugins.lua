@@ -25,6 +25,8 @@ packer.startup(function(use)
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
   -- Tools
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
   use 'hoob3rt/lualine.nvim' -- Status line
   use {
     "williamboman/nvim-lsp-installer",
@@ -33,6 +35,13 @@ packer.startup(function(use)
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
+  }
+  -- Nvim tree
+  use {
+   'nvim-tree/nvim-tree.lua',
+   requires = {
+     'nvim-tree/nvim-web-devicons', -- optional, for file icons
+   },
   }
   -- Telescope file browser
   use 'nvim-telescope/telescope.nvim'
@@ -50,6 +59,8 @@ packer.startup(function(use)
   use 'MunifTanjim/eslint.nvim'
   -- GitSigns
   use 'lewis6991/gitsigns.nvim'
+  -- Git
+  use 'dinhhuy258/git.nvim' 
   -- Autotag and lsp
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'

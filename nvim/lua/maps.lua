@@ -1,10 +1,25 @@
 local keymap = vim.keymap
 
+-- End of line
+keymap.set('n', '<S-l>', '$')
+keymap.set('n', '<S-h>', '0')
+
+-- Create new coding session
+function createNewSession()
+  vim.cmd[[:NvimTreeToggle]]
+  vim.cmd[[:tabedit]]
+  vim.cmd[[:term]]
+end
+keymap.set('n', '<Space>s', createNewSession)
+
+-- Toggle nvim tree
+keymap.set('n', 'nt', ':NvimTreeToggle<Return>')
+
 -- Select all text
 keymap.set('n', '<C-a>', 'ggVG')
 
 -- Save
-keymap.set('n', 'sf', ':w<Return>')
+keymap.set('n', 'sf', ':lua vim.lsp.buf.formatting_seq_sync()<Return> :w<Return>')
 
 -- Invert j & k
 keymap.set('n', 'k', 'j')
