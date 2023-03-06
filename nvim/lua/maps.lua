@@ -2,7 +2,7 @@ local keymap = vim.keymap
 
 -- End of line
 keymap.set('n', '<S-l>', '$')
-keymap.set('n', '<S-h>', '0')
+keymap.set('n', '<S-h>', '^')
 
 -- Create new coding session
 function createNewSession()
@@ -19,7 +19,7 @@ keymap.set('n', 'nt', ':NvimTreeToggle<Return>')
 keymap.set('n', '<C-a>', 'ggVG')
 
 -- Save
-keymap.set('n', 'sf', ':lua vim.lsp.buf.formatting_seq_sync()<Return> :w<Return>')
+keymap.set('n', 'sf', ':w<Return>')
 
 -- Invert j & k
 keymap.set('n', 'k', 'j')
@@ -46,7 +46,7 @@ keymap.set('', 'b<right>', '<C-w>l')
 
 -- Go to end of line
 keymap.set('n', '<S-right>', '$')
-keymap.set('n', '<S-left>', '0')
+keymap.set('n', '<S-left>', '^')
 
 -- Resize window
 keymap.set('n', '<C-w><left>', '<C-w>>')

@@ -28,6 +28,18 @@ packer.startup(function(use)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
   use 'hoob3rt/lualine.nvim' -- Status line
+  use({
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	tag = "v<CurrentMajor>.*",
+	-- install jsregexp (optional!:).
+	run = "make install_jsregexp"
+})
+  use 'rafamadriz/friendly-snippets'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'SirVer/ultisnips' -- snippets
+  use 'honza/vim-snippets'
+  use 'mlaursen/vim-react-snippets' -- react snippets
   use {
     "williamboman/nvim-lsp-installer",
     "neovim/nvim-lspconfig",
@@ -56,7 +68,6 @@ packer.startup(function(use)
   use 'glepnir/lspsaga.nvim'
   -- Prettier
   use 'jose-elias-alvarez/null-ls.nvim' -- Lsp diagnostics and code actions
-  use 'MunifTanjim/eslint.nvim'
   -- GitSigns
   use 'lewis6991/gitsigns.nvim'
   -- Git
@@ -68,6 +79,5 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/nvim-cmp'
-  use 'L3MON4D3/LuaSnip'
   use 'nvim-tree/nvim-web-devicons' -- File icons
 end)

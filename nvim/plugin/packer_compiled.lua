@@ -94,20 +94,25 @@ _G.packer_plugins = {
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   ["dracula.nvim"] = {
     loaded = true,
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
-  ["eslint.nvim"] = {
-    loaded = true,
-    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/eslint.nvim",
-    url = "https://github.com/MunifTanjim/eslint.nvim"
-  },
   ["eva01.vim"] = {
     loaded = true,
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/eva01.vim",
     url = "https://github.com/hachy/eva01.vim"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["git.nvim"] = {
     loaded = true,
@@ -224,10 +229,25 @@ _G.packer_plugins = {
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ultisnips = {
+    loaded = true,
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/ultisnips",
+    url = "https://github.com/SirVer/ultisnips"
+  },
   ["vim-monokai-tasty"] = {
     loaded = true,
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/vim-monokai-tasty",
     url = "https://github.com/patstockwell/vim-monokai-tasty"
+  },
+  ["vim-react-snippets"] = {
+    loaded = true,
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/vim-react-snippets",
+    url = "https://github.com/mlaursen/vim-react-snippets"
+  },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/vim-snippets",
+    url = "https://github.com/honza/vim-snippets"
   }
 }
 
