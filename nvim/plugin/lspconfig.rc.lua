@@ -44,7 +44,7 @@ end
 
 --nvim_lsp.diagnosticls.setup {
 --  on_attach = on_attach,
---  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'pandoc' },
+--  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'pandoc', 'tsx' },
 --  init_options = {
 --    linters = {
 --      eslint = {
@@ -123,10 +123,7 @@ nvim_lsp.tsserver.setup {
   capabilities = capabilities
 }
 
-nvim_lsp.tailwindcss.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
+nvim_lsp.tailwindcss.setup { }
 
 nvim_lsp.astro.setup {
   on_attach=on_attach,

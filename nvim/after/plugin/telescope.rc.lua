@@ -18,7 +18,9 @@ telescope.setup {
     },
     mappings = {
       n = {
-        ["q"] = actions.close
+        ["q"] = actions.close,
+        ["j"] = actions.move_selection_previous,
+        ["k"] = actions.move_selection_next,
       },
     },
   },
