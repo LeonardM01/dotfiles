@@ -3,22 +3,22 @@ if (not status) then return end
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
+vim.api.nvim_create_user_command("NullLsToggle", function()
+    null_ls.toggle({})
+end, {})
+
 local lsp_formatting = function(bufnr)
-  vim.lsp.buf.format({
-    filter = function(client)
-      return client.name == "null-ls"
-    end,
-    bufnr = bufnr,
-  })
+  vim.lsp.buf.format()
 end
 
 null_ls.setup {
   sources = {
-    null_ls.builtins.diagnostics.eslint.with({
-      diagnostics_format = '[eslint] #{m}\n(#{c})'
-    }),
-    null_ls.builtins.formatting.eslint,
+   -- null_ls.builtins.diagnostics.eslint.with({
+   --   diagnostics_format = '[eslint_d] #{m}\n(#{c})'
+   -- }),
+    null_ls.builtins.formatting.eslint_d,
     null_ls.builtins.formatting.stylua,
+    null_ls.builtins.formatting.prettier,
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then

@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -99,15 +104,15 @@ _G.packer_plugins = {
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["dracula.nvim"] = {
     loaded = true,
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
-  },
-  ["eva01.vim"] = {
-    loaded = true,
-    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/eva01.vim",
-    url = "https://github.com/hachy/eva01.vim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -124,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
@@ -132,7 +142,7 @@ _G.packer_plugins = {
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
-    url = "https://github.com/glepnir/lspsaga.nvim"
+    url = "https://github.com/nvimdev/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -168,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -214,6 +229,11 @@ _G.packer_plugins = {
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
   },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
+  },
   spaceduck = {
     loaded = true,
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/spaceduck",
@@ -234,10 +254,10 @@ _G.packer_plugins = {
     path = "/home/leonard/.local/share/nvim/site/pack/packer/start/ultisnips",
     url = "https://github.com/SirVer/ultisnips"
   },
-  ["vim-monokai-tasty"] = {
+  ["vim-mergetool"] = {
     loaded = true,
-    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/vim-monokai-tasty",
-    url = "https://github.com/patstockwell/vim-monokai-tasty"
+    path = "/home/leonard/.local/share/nvim/site/pack/packer/start/vim-mergetool",
+    url = "https://github.com/samoshkin/vim-mergetool"
   },
   ["vim-react-snippets"] = {
     loaded = true,

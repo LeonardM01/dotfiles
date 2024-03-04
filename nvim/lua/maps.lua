@@ -1,5 +1,12 @@
 local keymap = vim.keymap
 
+-- Copilot
+--vim.keymap.set('i', '<Tab>', 'copilot#Accept("<CR>")', {
+--  expr = true,
+--  replace_keycodes = false,
+--})
+--vim.g.copilot_no_tab_map = true
+
 -- End of line
 keymap.set('n', '<S-l>', '$')
 keymap.set('n', '<S-h>', '^')
@@ -39,9 +46,12 @@ keymap.set('n', 'sp', ':edit ')
 
 -- Move window
 keymap.set('', 'b<left>', '<C-w>h')
-keymap.set('', 'b<up>', '<C-w>k')
-keymap.set('', 'b<down>', '<C-w>j')
+keymap.set('', 'b<up>', '<C-w>j')
+keymap.set('', 'b<down>', '<C-w>k')
 keymap.set('', 'b<right>', '<C-w>l')
+
+-- Git
+keymap.set('n', 'mt', ':MergetoolToggle<Return>')
 
 
 -- Go to end of line
@@ -55,16 +65,17 @@ keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- Undo
-keymap.set('n', '<C-z>', 'U')
+keymap.set('n', 'U', ':undo<Return>')
+keymap.set('n', 'R', ':redo<Return>')
 
 -- Switch tab
-keymap.set('n', '<Tab>1', ':tabn 1<Return>')
-keymap.set('n', '<Tab>2', ':tabn 2<Return>')
-keymap.set('n', '<Tab>3', ':tabn 3<Return>')
-keymap.set('n', '<Tab>4', ':tabn 4<Return>')
-keymap.set('n', '<Tab>5', ':tabn 5<Return>')
-keymap.set('n', '<Tab>5', ':tabn 5<Return>')
-keymap.set('n', '<Tab>6', ':tabn 6<Return>')
+-- keymap.set('n', '<ALT-Tab>1', ':tabn 1<Return>')
+-- keymap.set('n', '<ALT-Tab>2', ':tabn 2<Return>')
+-- keymap.set('n', '<ALT-Tab>3', ':tabn 3<Return>')
+-- keymap.set('n', '<ALT-Tab>4', ':tabn 4<Return>')
+-- keymap.set('n', '<ALT-Tab>5', ':tabn 5<Return>')
+-- keymap.set('n', '<ALT-Tab>5', ':tabn 5<Return>')
+-- keymap.set('n', '<ALT-Tab>6', ':tabn 6<Return>')
 
 -- Open and close terminal
 keymap.set('n', 'tr', ':term<Return>')

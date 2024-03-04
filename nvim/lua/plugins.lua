@@ -4,37 +4,44 @@ if (not status) then
   return
 end
 
-local colorscheme = "spaceduck"
-
 if (colorscheme == "dracula") then
   vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
   vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" }) 
 end
 
 vim.cmd [[packadd packer.nvim]]
-vim.api.nvim_command("colorscheme " .. colorscheme)
+vim.cmd('set termguicolors')
 
 packer.startup(function(use)
+  -- cpptools
+  use 'mfussenegger/nvim-dap'
+  use 'simrat39/rust-tools.nvim'
   use 'wbthomason/packer.nvim'
+
   -- colorschemes
   use {
     'pineapplegiant/spaceduck',
     'Mofiqul/dracula.nvim',
+    use { "catppuccin/nvim", as = "catppuccin" },
     'patstockwell/vim-monokai-tasty',
     'hachy/eva01.vim',
+    'sainnhe/sonokai',
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
   -- Tools
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
+  use "lukas-reineke/indent-blankline.nvim"
   use 'hoob3rt/lualine.nvim' -- Status line
+  use 'github/copilot.vim'
+  use 'samoshkin/vim-mergetool'
   use({
 	"L3MON4D3/LuaSnip",
 	-- follow latest release.
 	tag = "v<CurrentMajor>.*",
 	-- install jsregexp (optional!:).
 	run = "make install_jsregexp"
-})
+  })
   use 'rafamadriz/friendly-snippets'
   use 'saadparwaiz1/cmp_luasnip'
   use 'SirVer/ultisnips' -- snippets
@@ -56,16 +63,17 @@ packer.startup(function(use)
    },
   }
   -- Telescope file browser
-  use 'nvim-telescope/telescope.nvim'
-  use 'nvim-telescope/telescope-file-browser.nvim'
-  use 'nvim-lua/plenary.nvim'
+  use {
+    "nvim-telescope/telescope-file-browser.nvim",
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  }
   use 'BurntSushi/ripgrep'
   -- Tabs bufferline
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
   -- Colorizer
   use 'norcalli/nvim-colorizer.lua'
   -- Lspsaga
-  use 'glepnir/lspsaga.nvim'
+  use 'nvimdev/lspsaga.nvim'
   -- Prettier
   use 'jose-elias-alvarez/null-ls.nvim' -- Lsp diagnostics and code actions
   -- GitSigns
