@@ -1,0 +1,112 @@
+{
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.git": false,
+    "**/.factorypath": true
+  },
+  // Settings JSON
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  "eslint.workingDirectories": ["./client", "./server"],
+
+  "code-runner.runInTerminal": true,
+  "json.maxItemsComputed": 10000,
+  "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.banner": "never",
+  "gitlens.defaultDateFormat": null,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.external.windowsExec": "\"C:\\Users\\asus\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\"",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "workbench.iconTheme": "material-icon-theme",
+  "tabnine.experimentalAutoImports": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\Users\\asus\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    }
+  },
+  "editor.fontFamily": "'Fira Code', 'Hack NF'",
+  "editor.fontLigatures": true,
+  "settingsSync.ignoredSettings": [
+    "editor.fontFamily",
+    "terminal.external.windowsExec"
+  ],
+  "discord.largeImage": "Editing a {lang} file",
+  "discord.largeImageIdling": "",
+  "discord.detailsIdling": "Browsing Stack Overflow",
+  "discord.lowerDetailsEditing": "Total lines: {total_lines}",
+  "workbench.startupEditor": "none",
+  "editor.fontWeight": "normal",
+  "workbench.colorTheme": "Dark CMYK",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+  "terminal.explorerKind": "external",
+  "workbench.productIconTheme": "icons-carbon",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "omnisharp.dotnetPath": "C:\\Program Files\\dotnet",
+  "omnisharp.sdkPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302",
+  "omnisharp.useModernNet": true,
+  "omnisharp.disableMSBuildDiagnosticWarning": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "cmake.configureOnOpen": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 1,
+  "eslint.codeActionsOnSave.rules": null,
+  "remote.SSH.remotePlatform": {
+    "192.168.1.13": "linux",
+    "leonardm01-portfolio-54uw6jcpuh.ssh.devenv.solutions": "linux"
+  },
+  "security.allowedUNCHosts": ["192.168.1.13"],
+  "editor.cursorSmoothCaretAnimation": "on",
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode",
+    "editor.formatOnSave": true
+  },
+  "dart.flutterSdkPath": "D:\\Program files (x86)\\Flutter\\flutter",
+  "remote.SSH.defaultExtensions": ["daytonaio.daytona"]
+}
