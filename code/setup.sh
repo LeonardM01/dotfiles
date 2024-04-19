@@ -12,6 +12,24 @@ if [ ! -f "$EXTENSIONS_FILE" ]; then
   exit 1
 fi
 
+# Copy settings.json to VS Code
+SETTINGS_FILE="$DIR/settings.json"
+if [ -f "$SETTINGS_FILE" ]; then
+  echo "Copying settings.json to VS Code"
+  cp "$SETTINGS_FILE" "$HOME/.config/Code/User/settings.json"
+else
+  echo "The settings.json file does not exist: $SETTINGS_FILE"
+fi
+
+# Copy keybindings.json to VS Code
+KEYBINDINGS_FILE="$DIR/keybindings.json"
+if [ -f "$KEYBINDINGS_FILE" ]; then
+  echo "Copying keybindings.json to VS Code"
+  cp "$KEYBINDINGS_FILE" "$HOME/.config/Code/User/keybindings.json"
+else
+  echo "The keybindings.json file does not exist: $KEYBINDINGS_FILE"
+fi
+
 # List .txt files in the directory
 echo "Listing .txt files in the directory:"
 ls $DIR/*.txt
