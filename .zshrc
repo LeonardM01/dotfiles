@@ -2,7 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+export ANDROID_HOME="/home/leonard/Android/Sdk/"
+export JAVA_HOME="/home/leonard/.jdks/corretto-17.0.11/"
 export ZSH="$HOME/.oh-my-zsh"
+export jetbrains="/opt/jetbrains-toolbox/jetbrains-toolbox"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -100,6 +106,24 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias cd="z"
+alias ls="eza --long --icons=always --no-permissions --color=always --no-time --no-user"
+
+alias arduino="~/arduino.appimage"
+
+alias wezterm="flatpak run org.wezfurlong.wezterm"
+
+alias gc="git commit -m"
+alias gp="git pull origin"
+alias gpo="git push origin"
+alias gf="git fetch --all"
+alias gco="git checkout"
+
+alias qbit="/opt/q-bittorent/qbittorrent.AppImage"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+eval "$(zoxide init zsh)"
+
+
